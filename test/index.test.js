@@ -42,3 +42,10 @@ test("should return 5", () => {
     )
   ).toEqual(5);
 });
+
+test("THROW THE ERROR THING", () =>{
+  expect(() => {
+    busyStudent([4,6], [4], 5);
+  }).toThrow();
+})
+

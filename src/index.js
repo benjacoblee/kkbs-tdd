@@ -30,7 +30,11 @@ module.exports = busyStudent = function (startTime, endTime, queryTime) {
 //   }
 
 //   return student;
-
+  
+  if (startTime.length !== endTime.length){
+    throw new Error("THROW THE ERROR THING")
+  }
+   
   let student = 0;
 
   for (let i = 0; i < startTime.length; i++) {
